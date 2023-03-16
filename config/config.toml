@@ -1,0 +1,22 @@
+appName = "go-chat"
+
+[mysql]
+host = "127.0.0.1"
+name = "chat"
+password = "Lin147258369"
+port = 3306
+tablePrefix = ""
+user = "root"
+
+[log]
+level = "debug"
+path = "logs/chat.log"
+
+[staticPath]
+filePath = "web/static/file/"
+
+[msgChannelType]
+channelType = "gochannel"
+
+kafkaHosts = "kafka:9092"
+kafkaTopic = "go-chat-message"
