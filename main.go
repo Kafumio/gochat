@@ -25,6 +25,8 @@ func main() {
 
 	newRouter := router.InitRouter()
 
+	go server.MyServer.Start()
+
 	s := &http.Server{
 		Addr:           ":8888",
 		Handler:        newRouter,

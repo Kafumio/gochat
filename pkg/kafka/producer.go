@@ -7,7 +7,7 @@ import (
 )
 
 var producer sarama.AsyncProducer
-var topic string = "default_message"
+var topic = "default_message"
 
 func InitProducer(topicInput, hosts string) {
 	topic = topicInput
